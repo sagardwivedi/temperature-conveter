@@ -19,8 +19,8 @@ function App() {
     };
 
     return (
-        <div className="flex flex-col h-screen w-full items-center justify-center bg-slate-400">
-            <h1 className="text-4xl mb-20 font-bold">Converter</h1>
+        <div className="flex h-screen w-full flex-col items-center justify-center bg-slate-400">
+            <h1 className="mb-20 text-4xl font-bold">Converter</h1>
             <section className="w-[90%] max-w-lg rounded-2xl bg-white p-8  shadow-xl">
                 <form>
                     <div className="space-y-4">
@@ -31,17 +31,23 @@ function App() {
                             >
                                 Temperature
                             </label>
-                            <Input
-                                temperature={temperature}
-                                setTemperature={setTemperature}
-                            />
+                            <div className="flex items-center justify-between">
+                                <Input
+                                    temperature={temperature}
+                                    setTemperature={setTemperature}
+                                />
+                                <select className="mt-1 w-[10%] text-center appearance-none rounded-lg border border-gray-400 p-2 focus:outline-none">
+                                    <option value="Cel">°C</option>
+                                    <option value="Fah">F</option>
+                                </select>
+                            </div>
                         </div>
                         <div className="flex flex-col">
                             <label className="text-xl font-semibold text-gray-900">
                                 Type
                             </label>
                             <select
-                                className="mt-1 rounded-lg border border-gray-400 p-2 focus:outline-none"
+                                className="mt-1 appearance-none rounded-lg border border-gray-400 p-2 focus:outline-none"
                                 value={type}
                                 onChange={(e) => settype(e.target.value)}
                             >
@@ -60,7 +66,7 @@ function App() {
                         </div>
                     </div>
                     <div className="flex flex-col space-y-1">
-                        <hr className="h-0.5 mt-2 bg-black" />
+                        <hr className="mt-2 h-0.5 bg-black" />
                         <span className="text-center text-xl font-semibold text-gray-900">
                             Result
                         </span>
