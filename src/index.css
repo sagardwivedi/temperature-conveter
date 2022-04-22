@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+    .backg {
+        background: rgb(36, 0, 0);
+        background: radial-gradient(
+            circle,
+            rgba(36, 0, 0, 1) 0%,
+            rgba(9, 113, 121, 1) 25%,
+            rgba(5, 166, 175, 1) 50%,
+            rgba(3, 214, 130, 1) 75%,
+            rgba(0, 255, 217, 1) 100%
+        );
+    }
+}

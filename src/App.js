@@ -19,9 +19,9 @@ function App() {
     };
 
     return (
-        <div className="flex h-screen w-full flex-col items-center justify-center bg-slate-400">
-            <h1 className="mb-20 text-4xl font-bold">Converter</h1>
-            <section className="w-[90%] max-w-lg animate-lineInserted rounded-2xl bg-white p-8 shadow-xl">
+        <div className="backg flex h-screen w-full flex-col items-center justify-center ">
+            {/* <h1 className="mb-20 text-8xl font-bold text-white">Converter</h1> */}
+            <section className="bg-inherit w-[90%] max-w-lg rounded-xl p-8 shadow-transparent">
                 <form>
                     <div className="space-y-4">
                         <div className="flex flex-col">
