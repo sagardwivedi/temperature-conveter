@@ -20,8 +20,8 @@ function App() {
 
     return (
         <div className="backg flex h-screen w-full flex-col items-center justify-center ">
-            {/* <h1 className="mb-20 text-8xl font-bold text-white">Converter</h1> */}
-            <section className="bg-inherit w-[90%] max-w-lg rounded-xl p-8 shadow-transparent">
+            <h1 className="mb-20 md:text-8xl text-4xl font-bold text-white">Converter</h1>
+            <section className="bg-transparent w-[90%] max-w-lg rounded-xl p-8 shadow">
                 <form>
                     <div className="space-y-4">
                         <div className="flex flex-col">
@@ -36,7 +36,7 @@ function App() {
                                     temperature={temperature}
                                     setTemperature={setTemperature}
                                 />
-                                <select className="mt-1 w-[10%] appearance-none rounded-lg border border-gray-400 p-2 text-center focus:outline-none">
+                                <select className="mt-1 w-[12%] appearance-none rounded-lg border border-gray-400 p-2 text-center focus:outline-none">
                                     <option value="Cel">°C</option>
                                     <option value="Fah">F</option>
                                 </select>
@@ -47,7 +47,7 @@ function App() {
                                 Type
                             </label>
                             <select
-                                className="mt-1 rounded-lg border border-gray-400 p-2 accent-purple-500 focus:outline-none"
+                                className="mt-1 appearance-none rounded-lg border border-gray-400 p-2 accent-purple-500 focus:outline-none"
                                 value={type}
                                 onChange={(e) => settype(e.target.value)}
                             >
