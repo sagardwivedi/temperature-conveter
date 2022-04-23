@@ -19,13 +19,15 @@ function App() {
     };
 
     return (
-        <>
-            <div className="backg flex h-screen w-full items-center justify-center">
-                <h1 className="animate-pulse text-8xl font-bold text-white">
-                    Converter
-                </h1>
+        <div className="scrollbar-hide overflow-y-hidden">
+            <div>
+                <div className="backg flex h-screen w-full items-center justify-center bg-fixed">
+                    <h1 className="animate-pulse text-8xl font-bold text-white">
+                        Converter
+                    </h1>
+                </div>
             </div>
-            <div className="h-screen">
+            <div className="flex h-screen items-center justify-center">
                 <section className="w-[90%] max-w-lg rounded-xl bg-transparent p-8">
                     <form>
                         <div className="space-y-4">
@@ -82,7 +84,7 @@ function App() {
                     </form>
                 </section>
             </div>
-        </>
+        </div>
     );
 }
 
