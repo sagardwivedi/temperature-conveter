@@ -19,10 +19,10 @@ function App() {
     };
 
     return (
-        <div className="scrollbar-hide overflow-y-hidden">
+        <>
             <div>
                 <div className="backg flex h-screen w-full items-center justify-center bg-fixed">
-                    <h1 className="animate-pulse text-8xl font-bold text-white">
+                    <h1 className="animate-bounce select-none text-8xl font-bold text-white">
                         Converter
                     </h1>
                 </div>
@@ -84,7 +84,7 @@ function App() {
                     </form>
                 </section>
             </div>
-        </div>
+        </>
     );
 }
 
